@@ -3,13 +3,13 @@ import time
 import random
 import string
 
-total_size_mb = int(input("Bitte geben Sie ein, wie groß der Ordner werden soll (in MB): "))
+total_size_mb = int(input("Size of the file (in MB): "))
 
-print(f"Es wird ein Ordner erstellt.")
+print(f"Folder for the file will be created.")
 
-confirmation = input("Möchten Sie fortfahren? (j/n): ")
+confirmation = input("process? (y/n): ")
 
-if confirmation.lower() == 'j':
+if confirmation.lower() == 'y':
     
     folder_name = ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(8))
 
